@@ -1,4 +1,5 @@
 My GCP Billing Analytics Project
+
 A Looker-based analytics solution for gaining deep insights into Google Cloud Platform (GCP) billing data. This project provides a scalable and customizable framework to monitor cloud costs, identify high-spending services, and improve financial decision-making across cloud projects.
 
 Overview
