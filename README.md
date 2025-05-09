@@ -1,160 +1,44 @@
 My GCP Billing Analytics Project
-
-A Looker-based analytics solution for gaining deep insights into Google Cloud Platform (GCP) billing data. This project provides a scalable and customizable framework to monitor cloud costs, identify high-spending services, and improve financial decision-making across cloud projects.
-
-Overview
-This project is built to help organizations track and optimize their GCP cloud spend using BigQuery billing export data and LookML. It empowers finance and DevOps teams to monitor trends, analyze usage patterns, and set up proactive cost governance.
-
-Features
-Dynamic dashboards for cost trends, service usage, and project-level expenses.
-
-Custom measures to identify cost spikes and high-expense services.
-
-Time-based filtering and label segmentation for granular analysis.
-
-Modular LookML files for easy customization and scaling.
-
-Setup Instructions
-To deploy this project, you'll need access to a Looker instance and a GCP BigQuery dataset with billing export enabled.
-
-Create a Project in Looker
-Start a new project in the Looker IDE and upload all LookML files.
-
-Connect to GCP Billing Data
-Configure your model file to connect to a BigQuery dataset containing GCP billing export data.
-
-Deploy & Explore
-Switch to Production Mode and explore dashboards for insights into spending trends, top services, and cost anomalies.
-
-Dashboards
-GCP Cost Trends: Visualize historical cost growth and fluctuation.
-
-Service-Level Analysis: Identify which services contribute most to your spend.
-
-Project-Level Comparison: Track budget allocation and efficiency per GCP project.
-
-Data Source
-This project relies on data from the GCP billing export to BigQuery, which includes detailed information on usage, SKU-level charges, project identifiers, and labels.
-
-Use Cases
-Cost optimization and budgeting
-
-Chargeback and showback reporting
-
-Cloud financial governance
-
-Trend analysis and forecasting
-
-Notes
-This project is intended as a foundational analytics layer. You may need to adjust the LookML for your specific billing schema or organizational tags.
-
-Ensure proper data permissions are set up for BigQuery access in Looker.
-
-Built to simplify GCP cloud cost management with actionable insights.
-
-My GCP Billing Analytics Project
-A Looker-based analytics solution for gaining deep insights into Google Cloud Platform (GCP) billing data. This project provides a scalable and customizable framework to monitor cloud costs, identify high-spending services, and improve financial decision-making across cloud projects.
+This project showcases a Looker-based analytics solution for Google Cloud Platform (GCP) billing data, featuring LookML models and dashboards built to track, analyze, and optimize cloud spending.
 
 Overview
-This project is built to help organizations track and optimize their GCP cloud spend using BigQuery billing export data and LookML. It empowers finance and DevOps teams to monitor trends, analyze usage patterns, and set up proactive cost governance.
-
-Features
-Dynamic dashboards for cost trends, service usage, and project-level expenses.
-
-Custom measures to identify cost spikes and high-expense services.
-
-Time-based filtering and label segmentation for granular analysis.
-
-Modular LookML files for easy customization and scaling.
+This repository contains LookML code for a data model and dashboards designed to provide insights into GCP billing export data stored in BigQuery. It enables cloud, finance, and DevOps teams to monitor usage, detect cost anomalies, and make data-driven budgeting decisions.
 
 Setup Instructions
-To deploy this project, you'll need access to a Looker instance and a GCP BigQuery dataset with billing export enabled.
+To use this project, you need a Looker instance and access to a BigQuery dataset with GCP billing export enabled.
 
-Create a Project in Looker
-Start a new project in the Looker IDE and upload all LookML files.
+Steps:
+Import the Project:
 
-Connect to GCP Billing Data
-Configure your model file to connect to a BigQuery dataset containing GCP billing export data.
+Create a new project in your Looker instance.
 
-Deploy & Explore
-Switch to Production Mode and explore dashboards for insights into spending trends, top services, and cost anomalies.
+Upload the LookML files from this repository to the Looker IDE.
 
-Dashboards
-GCP Cost Trends: Visualize historical cost growth and fluctuation.
+Configure the model to connect to your BigQuery billing dataset (update the connection in my_billing_analytics.model.lkml).
 
-Service-Level Analysis: Identify which services contribute most to your spend.
+Connect to Data:
 
-Project-Level Comparison: Track budget allocation and efficiency per GCP project.
+Set up a BigQuery connection in Looker.
 
-Data Source
-This project relies on data from the GCP billing export to BigQuery, which includes detailed information on usage, SKU-level charges, project identifiers, and labels.
+Use a billing export dataset from your GCP account.
 
-Use Cases
-Cost optimization and budgeting
+Deploy:
 
-Chargeback and showback reporting
+Deploy the project in Looker’s production mode.
 
-Cloud financial governance
-
-Trend analysis and forecasting
-
-Notes
-This project is intended as a foundational analytics layer. You may need to adjust the LookML for your specific billing schema or organizational tags.
-
-Ensure proper data permissions are set up for BigQuery access in Looker.
-
-Built to simplify GCP cloud cost management with actionable insights.
-
-My GCP Billing Analytics Project
-A Looker-based analytics solution for gaining deep insights into Google Cloud Platform (GCP) billing data. This project provides a scalable and customizable framework to monitor cloud costs, identify high-spending services, and improve financial decision-making across cloud projects.
-
-Overview
-This project is built to help organizations track and optimize their GCP cloud spend using BigQuery billing export data and LookML. It empowers finance and DevOps teams to monitor trends, analyze usage patterns, and set up proactive cost governance.
-
-Features
-Dynamic dashboards for cost trends, service usage, and project-level expenses.
-
-Custom measures to identify cost spikes and high-expense services.
-
-Time-based filtering and label segmentation for granular analysis.
-
-Modular LookML files for easy customization and scaling.
-
-Setup Instructions
-To deploy this project, you'll need access to a Looker instance and a GCP BigQuery dataset with billing export enabled.
-
-Create a Project in Looker
-Start a new project in the Looker IDE and upload all LookML files.
-
-Connect to GCP Billing Data
-Configure your model file to connect to a BigQuery dataset containing GCP billing export data.
-
-Deploy & Explore
-Switch to Production Mode and explore dashboards for insights into spending trends, top services, and cost anomalies.
+Explore the dashboards and run queries to verify functionality.
 
 Dashboards
-GCP Cost Trends: Visualize historical cost growth and fluctuation.
+The project includes a primary dashboard:
 
-Service-Level Analysis: Identify which services contribute most to your spend.
+GCP Billing Dashboard: Visualizes key billing metrics including total spend, cost trends, high-cost services, and project-level usage.
 
-Project-Level Comparison: Track budget allocation and efficiency per GCP project.
+Example: Billing Dashboard Screenshot
 
 Data Source
-This project relies on data from the GCP billing export to BigQuery, which includes detailed information on usage, SKU-level charges, project identifiers, and labels.
-
-Use Cases
-Cost optimization and budgeting
-
-Chargeback and showback reporting
-
-Cloud financial governance
-
-Trend analysis and forecasting
+The project is designed to work with GCP billing export datasets in BigQuery. The billing export must be configured in your GCP account to start collecting usage and cost data.
 
 Notes
-This project is intended as a foundational analytics layer. You may need to adjust the LookML for your specific billing schema or organizational tags.
+This project was built to demonstrate Looker’s capabilities for cloud cost analysis.
 
-Ensure proper data permissions are set up for BigQuery access in Looker.
-
-Built to simplify GCP cloud cost management with actionable insights.
-
+You can customize the LookML and dashboards to align with your organization’s billing structure and cost optimization goals.
